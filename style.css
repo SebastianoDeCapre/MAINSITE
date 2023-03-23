@@ -5,9 +5,15 @@ body {
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     height: 10vh;
-    background-color: rgba(0, 0, 0, 0.595);
+    background-color: rgb(32, 32, 32);
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 
@@ -22,7 +28,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: large;
     margin: 10px;
-    margin-left: 90%;
+    margin-left: 70%;
     text-align: center;
 
 }
@@ -36,6 +42,65 @@ body {
 
 .navigation-bar {
     height: 90vh;
-    background-color: rgba(0, 0, 0, 0.456);
+    background-color: rgb(21, 20, 20);
     width: 8vw;
+    position: fixed;
+    margin-top: 10vh;
+}
+
+/* .grid-container {
+    display: grid;
+    row-gap: 10px;
+    width: auto;
+    height: auto;
+    float:left;
+    margin-left: 17vh;
+    grid-template-columns: repeat(10, 140px);
+    grid-auto-flow: dense;
+  } */
+
+  .grid-container {
+    width: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 19.5vh;
+    float:left;
+    margin-top: 10vh;
+    max-width: 85vw;
+
+
+  }
+
+.celeb-block {
+    height: 150px;
+    width: 110px;
+    background-color: black;
+    margin: 4px;
+
+}
+
+.slidepage {
+    width: 40vw;
+    height: 90vh;
+    background-color: dimgray;
+    float: right;
+    right: -37vw;
+    margin-top: 10vh;
+    position: fixed;
+    transition: 1s;
+
+
+}
+
+.slidepage-button {
+    width: 2vw;
+    height: 8vh;
+    background-color: aqua;
+    margin-top: 36vh;
+}
+
+#slidy {
+    right: 0;
+    transition: 1s;
 }
