@@ -23,6 +23,25 @@ function slider() {
     }
 }
 
+let = userbutton = document.querySelector(".icon")
+
+let userblock = document.querySelector(".userblock")
+
+
+function userpage() {
+  userblock = document.getElementById("view")
+  console.log("din pappa")
+  if (userblock){
+  document.querySelector(".userblock").setAttribute("id", "")
+
+  }
+  else{
+    document.querySelector(".userblock").setAttribute("id", "view")
+  }
+}
+
+slidebutton.addEventListener("click", userpage)
+
 
 
 console.log("hej")

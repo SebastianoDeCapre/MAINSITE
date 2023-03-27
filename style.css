@@ -9,11 +9,7 @@ body {
     height: 10vh;
     background-color: rgb(32, 32, 32);
     position: fixed;
-    top:0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1000;
+    
 }
 
 
@@ -27,9 +23,10 @@ body {
     background-color: lawngreen;
     font-family: 'Josefin Sans', sans-serif;
     font-size: large;
-    margin: 10px;
-    margin-left: 70%;
+    margin:10px;
+    margin-left: 85%;
     text-align: center;
+    top:1px;
 
 }
 
@@ -80,12 +77,20 @@ body {
 
 }
 
+.adholder {
+    width: 228px;
+    height: 308px;
+    background-color: black;
+    margin: 4px;
+}
+
+
 .slidepage {
-    width: 40vw;
+    width: 43vw;
     height: 90vh;
     background-color: dimgray;
     float: right;
-    right: -37vw;
+    right: -40vw;
     margin-top: 10vh;
     position: fixed;
     transition: 1s;
@@ -101,6 +106,31 @@ body {
 }
 
 #slidy {
-    right: 0;
+    right: 0vw;
     transition: 1s;
+}
+
+.icon {
+    width: 3vw;
+    height: 6vh;
+    position: relative;
+    top: 1.5vh;
+    display: inline-block;
+
+}
+
+.userblock {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    background-color: beige;
+    float: right;
+    right:2vh;
+    top: 8.8vh;
+    z-index: 10000;
+    display: block;
+}
+
+#view {
+    display: block;
 }
