@@ -43,6 +43,25 @@ body {
     width: 8vw;
     position: fixed;
     margin-top: 10vh;
+    flex-direction: column;
+    display: flex;
+    color: white;
+}
+
+
+.navblock {
+    width: 8vw;
+    height: 4vh;
+    margin: 0;
+    padding-left: 1vw;
+    padding-top: 0.5vh;
+}
+
+.nav-advert {
+    margin: auto;
+    width: 7vw;
+    height: 50vh;
+    background-color: brown;
 }
 
 /* .grid-container {
@@ -65,8 +84,6 @@ body {
     float:left;
     margin-top: 10vh;
     max-width: 85vw;
-
-
   }
 
 .celeb-block {
@@ -75,13 +92,6 @@ body {
     background-color: black;
     margin: 4px;
 
-}
-
-.adholder {
-    width: 228px;
-    height: 308px;
-    background-color: black;
-    margin: 4px;
 }
 
 
@@ -128,9 +138,39 @@ body {
     right:2vh;
     top: 8.8vh;
     z-index: 10000;
-    display: block;
+    display: none;
 }
 
 #view {
     display: block;
+}
+
+.ad-popup {
+    position: fixed;
+    width: 70vw;
+    height: 10vw;
+    background-color: brown;
+    float: right;
+    z-index: 100;
+    right: 15vw;
+    bottom: 0;
+    display: none;
+    
+}
+
+.close-button {
+    position: absolute;
+    width: 3%;
+    height: 15%;
+    margin-left: 97%;
+    float:left;
+    background-color: blue;
+}
+
+.fill {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
 }
