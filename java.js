@@ -1,3 +1,6 @@
+
+///*** ADDS ALL CELEBRITY BLOCKS ***////
+
 const block = document.querySelector(".grid-container")
 
 for (let index = 0; index < 100; index++) {
@@ -22,6 +25,8 @@ function slider() {
       document.querySelector(".slidepage").setAttribute("id", "slidy")
     }
 }
+
+/**/
 
 ///***      USER POP UP     ***///
 
@@ -53,17 +58,17 @@ let adpopup = document.querySelector(".ad-popup")
 
 function adpop() {
 
-  adpopup = document.getElementById("view")
+  adpopup = document.getElementById("ad-slide")
   console.log("din pappa")
   if (userblock){
-    document.querySelector(".ad-popup").setAttribute("id", "view")
+    document.querySelector(".ad-popup").setAttribute("id", "ad-slide")
   }
   else{
     document.querySelector(".ad-popup").setAttribute("id", "")
   }
 }
 
-setInterval(adpop, 5000);
+setInterval(adpop, 120000);
 
 /**/
 
