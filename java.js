@@ -23,10 +23,13 @@ function slider() {
     }
 }
 
+///***      USER POP UP     ***///
+
 let = userbutton = document.querySelector(".icon")
 
 let userblock = document.querySelector(".userblock")
 
+userbutton.addEventListener("click", userpage)
 
 function userpage() {
   userblock = document.getElementById("view")
@@ -40,8 +43,38 @@ function userpage() {
   }
 }
 
-slidebutton.addEventListener("click", userpage)
+/**/
 
+////****       AD POP UP       ****////
 
+/* Display ad every 30 seconds */
 
-console.log("hej")
+let adpopup = document.querySelector(".ad-popup")
+
+function adpop() {
+
+  adpopup = document.getElementById("view")
+  console.log("din pappa")
+  if (userblock){
+    document.querySelector(".ad-popup").setAttribute("id", "view")
+  }
+  else{
+    document.querySelector(".ad-popup").setAttribute("id", "")
+  }
+}
+
+setInterval(adpop, 5000);
+
+/**/
+
+/* removes ad */
+
+function adpopremove() {
+    document.querySelector(".ad-popup").setAttribute("id", "")
+}
+
+let closebutton = document.querySelector(".close-button")
+
+closebutton.addEventListener("click", adpopremove)
+
+/**/
