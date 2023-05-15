@@ -9,30 +9,26 @@
     <script src="https://kit.fontawesome.com/966c45ff82.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-
-    
-
     
     <div class="header">
         <div class="header-logo"></div>
         <input class="search-bar" type="text" placeholder="Search.." id="search">
-        <button class="search-bar search-button" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="search-bar" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
         <a href="login.html">
             <button class="log-in-button"><p>LOG IN</p></button>
         </a>
         <img src="UserIcon.png" class="icon" alt="En bild på User"></img>
     </div>
     <div class="search-requests-block">
-        <div class="search-requests-content"></div>
-        <div class="search-requests-exit-button"></div>
+        <div class="search-requests-content-grid">
+            
+        </div>
+        <button class="search-requests-exit-button">Close</button>
     </div>
 
     <div class="userblock"></div>
 
     <div class="grid-container">
-        <div class="adholder"></div>
-        <p></p>
     </div>
 
     <div class="navigation-bar">
@@ -52,16 +48,19 @@
         </button>
     </div>
 
-    <div class="bottom-navbar"></div>
+
     
     <div class="ad-popup">
         <a href="https://recordretreat.netlify.app/index.html" target="_blank"><img src="unnamed.png" class="fill"></a>
         <button class="close-button"></button>
     </div>
 
-
-
+    <div id="scroll-div">
+        <button id="generate-button"></button>
+    </div>
 
     <script src="java.js"></script>
+
+
 </body>
 </html>
