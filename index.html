@@ -14,10 +14,11 @@
         <div class="header-logo"></div>
         <input class="search-bar" type="text" placeholder="Search.." id="search">
         <button class="search-bar" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <a href="login.html">
-            <button class="log-in-button"><p>LOG IN</p></button>
-        </a>
+        <form action="login.html">
+            <button type="submit" class="log-in-button"><p>LOG IN</p></button>
+        </form>
         <img src="UserIcon.png" class="icon" alt="En bild på User"></img>
+        <img src="hamburgermenu-150x150.png" class="quick-Menu" alt="Quick Menu">
     </div>
     <div class="search-requests-block">
         <div class="search-requests-content-grid">
@@ -32,18 +33,15 @@
     </div>
 
     <div class="navigation-bar">
-        <div class="navblock">How To Play</div>
-        <div class="navblock">something</div>
-        <div class="navblock">something</div>
-        <div class="navblock">something</div>
-        <div class="navblock">something</div>
-        <div class="navblock">something</div>
-        <div class="navblock">something</div>
-        <div class="navblock">About Us</div>
+        <a href="how-to-play.html"><div class="navblock">How To Play</div></a>
+        <a href="about-us.html"><div class="navblock">About Us</div></a>
         <img class= "nav-advert" src="ad_banner.png" alt="En reklam slide">
     </div>
 
     <div class="slidepage">
+        <div class="celeb-bet"></div>
+        <div class="betting-button ALIVE"><p>ALIVE</p></div>
+        <div class="betting-button DEAD"><p>DEAD</p></div>
         <button class="slidepage-button">
         </button>
     </div>
@@ -56,7 +54,7 @@
     </div>
 
     <div id="scroll-div">
-        <button id="generate-button"></button>
+        <button id="generate-button">Generate more!</button>
     </div>
 
     <script src="java.js"></script>
