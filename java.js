@@ -246,22 +246,6 @@ generateButton.addEventListener("click", () => { /* adds more actors */
 
 let = userbutton = document.querySelector(".icon")
 
-let userblock = document.querySelector(".userblock")
-
-userbutton.addEventListener("click", userpage)
-
-function userpage() {
-  userblock = document.getElementById("view")
-  console.log("din pappa")
-  if (userblock){
-  document.querySelector(".userblock").setAttribute("id", "")
-
-  }
-  else{
-    document.querySelector(".userblock").setAttribute("id", "view")
-  }
-}
-
 /**/
 
 ////****       AD POP UP       ****////
